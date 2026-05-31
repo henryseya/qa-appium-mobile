@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-31T17:21:47 CEST" name="Appium BrowserStack Suite" finished-at="2026-05-31T17:22:14 CEST" duration-ms="27351">
+    <groups>
+    </groups>
+    <test started-at="2026-05-31T17:21:47 CEST" name="Android ApiDemos Tests" finished-at="2026-05-31T17:22:14 CEST" duration-ms="27351">
+      <class name="tests.ApiDemosTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ApiDemosTest@399f45b1]" started-at="2026-05-31T17:21:47 CEST" name="setUp" finished-at="2026-05-31T17:22:04 CEST" duration-ms="17163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testHomeScreenLoads()[pri:0, instance:tests.ApiDemosTest@399f45b1]" started-at="2026-05-31T17:22:04 CEST" name="testHomeScreenLoads" description="Verify home screen loads with menu items" finished-at="2026-05-31T17:22:08 CEST" duration-ms="4094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomeScreenLoads -->
+        <test-method signature="testNavigateToAccessibility()[pri:0, instance:tests.ApiDemosTest@399f45b1]" started-at="2026-05-31T17:22:08 CEST" name="testNavigateToAccessibility" description="Navigate to Accessibility section" finished-at="2026-05-31T17:22:10 CEST" duration-ms="2554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigateToAccessibility -->
+        <test-method signature="testViewsSectionExists()[pri:0, instance:tests.ApiDemosTest@399f45b1]" started-at="2026-05-31T17:22:10 CEST" name="testViewsSectionExists" description="Verify Views section exists in main menu" finished-at="2026-05-31T17:22:12 CEST" duration-ms="1638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewsSectionExists -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ApiDemosTest@399f45b1]" started-at="2026-05-31T17:22:12 CEST" name="tearDown" finished-at="2026-05-31T17:22:14 CEST" duration-ms="1791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ApiDemosTest -->
+    </test> <!-- Android ApiDemos Tests -->
+  </suite> <!-- Appium BrowserStack Suite -->
+</testng-results>

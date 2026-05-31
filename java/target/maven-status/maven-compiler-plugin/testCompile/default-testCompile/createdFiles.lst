@@ -1,0 +1,4 @@
+config\BrowserStackConfig.class
+pages\ApiDemosHomePage.class
+tests\BaseTest.class
+tests\ApiDemosTest.class
