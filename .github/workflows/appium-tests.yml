@@ -1,0 +1,57 @@
+name: Appium Mobile Tests - BrowserStack
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-java:
+    name: Java - TestNG
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Update BrowserStack credentials
+        working-directory: java
+        run: |
+          sed -i "s/henryherrera_GprjUl/${{ secrets.BS_USERNAME }}/g" src/test/java/config/BrowserStackConfig.java
+          sed -i "s/4pLTyz7SmXR2M7ymtqpy/${{ secrets.BS_ACCESS_KEY }}/g" src/test/java/config/BrowserStackConfig.java
+
+      - name: Run tests
+        working-directory: java
+        run: mvn test
+
+  test-python:
+    name: Python - pytest
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        working-directory: python
+        run: pip install -r requirements.txt
+
+      - name: Update BrowserStack credentials
+        working-directory: python
+        run: |
+          sed -i "s/henryherrera_GprjUl/${{ secrets.BS_USERNAME }}/g" conftest.py
+          sed -i "s/4pLTyz7SmXR2M7ymtqpy/${{ secrets.BS_ACCESS_KEY }}/g" conftest.py
+
+      - name: Run tests
+        working-directory: python
+        run: pytest
