@@ -1,7 +1,7 @@
 # qa-appium-mobile
 
 Mobile Testing with Appium + BrowserStack — Java and Python
-QA Automation Study Plan.
+QA Automation.
 
 ## Stack
 - Appium Java Client 8.6.0 + TestNG
