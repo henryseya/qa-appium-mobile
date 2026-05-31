@@ -8,7 +8,7 @@ QA Automation.
 - Appium Python Client 4.3.0 + pytest
 - BrowserStack App Automate (Samsung Galaxy S23 — Android 13)
 
-## Structure
+```bash
 qa-appium-mobile/
 ├── java/
 │   ├── pom.xml
@@ -20,11 +20,12 @@ qa-appium-mobile/
 │           ├── BaseTest.java
 │           └── ApiDemosTest.java
 └── python/
-├── requirements.txt
-├── pytest.ini
-├── conftest.py
-├── pages/home_page.py
-└── tests/test_api_demos.py
+    ├── requirements.txt
+    ├── pytest.ini
+    ├── conftest.py
+    ├── pages/home_page.py
+    └── tests/test_api_demos.py
+```
 ## Run
 
 ### Java
